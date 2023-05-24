@@ -1,21 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Country from "./components/Country";
 import { Provider } from 'react-redux';
 import {store} from "./store";
+import Routes from "./routes";
+import {NavBar} from "./components";
+import {AuthProvider} from "./auth/auth";
 
 const App: React.FC = () => {
-    const [counter, setCounter] = useState<number>(0);
-
     return (
         <Provider store={store}>
-            <div className="App">
-                <h1>Hi World</h1>
-                <p>{counter}</p>
-                <button onClick={() => setCounter(counter + 1)} >Increase</button>
-                <br/>
-                <Country />
-            </div>
+            <AuthProvider>
+                <NavBar />
+                <Routes />
+            </AuthProvider>
         </Provider>
     );
 }

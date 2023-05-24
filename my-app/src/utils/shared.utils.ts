@@ -11,3 +11,6 @@ export enum RequestMethod {
     PUT = 'PUT',
     DELETE = 'DELETE',
 }
+export type ResponseTypes<T> = {
+    data: T
+}

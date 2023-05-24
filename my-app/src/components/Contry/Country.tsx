@@ -1,7 +1,7 @@
 import React from "react";
-import {useGetAllCountriesQuery} from "../services";
+import {useGetAllCountriesQuery} from "../../services";
 
-const Country: React.FC = () => {
+export const Country: React.FC = () => {
     const { data, error, isLoading } = useGetAllCountriesQuery()
 
     const getLanguages = (obj: {[key: string]: string}): string => {
@@ -30,5 +30,3 @@ const Country: React.FC = () => {
         </div>
     );
 }
-
-export default Country;
