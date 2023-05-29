@@ -1,2 +1,3 @@
 export * from './CountryService';
-export * from './OpenIAServices';
+export * from './OpenAIServices';
+export * from './NasaService';

@@ -4,8 +4,8 @@ import {ChatBodyRequest, Model} from "../types";
 
 const apiKey = '';
 
-export const openIAApi = createApi({
-    reducerPath: 'openIA',
+export const openAIApi = createApi({
+    reducerPath: 'openAI',
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://api.openai.com/v1',
         prepareHeaders: (headers) => {
@@ -40,4 +40,4 @@ export const openIAApi = createApi({
     })
 });
 
-export const {useGetModelsQuery, useGetModelByNameQuery, useCreateMessageMutation} = openIAApi;
+export const {useGetModelsQuery, useGetModelByNameQuery, useCreateMessageMutation} = openAIApi;

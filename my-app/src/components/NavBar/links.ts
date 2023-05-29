@@ -1,4 +1,4 @@
-import {NavbarLink} from "../../utils/navbar.type";
+import {NavbarLink} from "../../types";
 
 export const links: Array<NavbarLink> = [
     {
@@ -17,8 +17,8 @@ export const links: Array<NavbarLink> = [
         private: false
     },
     {
-        to: '/countries',
-        displayText: 'countries',
+        to: '/galaxies',
+        displayText: 'galaxies',
         private: false
     }
 ];

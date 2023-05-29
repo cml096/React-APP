@@ -1,8 +1,10 @@
 import {Routes as ReactRoutes, Route} from "react-router-dom";
-import {Country} from "./components";
 import {Home, Login, Profile} from "./views";
+import {Galaxies} from "./views/Galaxies/Galaxies";
+import {GalaxyCard} from "./components/GalaxyCard/GalaxyCard";
 
 export enum AppRoutes {
+    GALAXIES = '/galaxies',
     COUNTRIES = '/countries',
     HOME = '/',
     PROFILE = '/profile',
@@ -12,8 +14,8 @@ export enum AppRoutes {
 const Routes = () => {
     return (
         <ReactRoutes>
-            <Route path={AppRoutes.COUNTRIES} element={<Country />}>
-                <Route path={':county_id'} element={<Country />} />
+            <Route path={AppRoutes.GALAXIES} element={<Galaxies />}>
+                <Route path={':id'} element={<GalaxyCard />} />
             </Route>
             <Route path={AppRoutes.HOME} element={<Home />} />
             <Route path={AppRoutes.PROFILE} element={<Profile />} />
