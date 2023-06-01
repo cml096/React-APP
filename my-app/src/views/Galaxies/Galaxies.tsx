@@ -1,7 +1,7 @@
 import React from "react";
 import {useGetGalaxiesQuery} from "../../services";
-import {GalaxiesLayout} from "../../components/GalaxiesLayout/GalaxiesLayout";
 import {Outlet} from "react-router-dom";
+import {GalaxiesLayout} from "../../components";
 
 export const Galaxies: React.FC = () => {
     const { data, error, isLoading } = useGetGalaxiesQuery()

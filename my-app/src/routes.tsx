@@ -1,7 +1,7 @@
 import {Routes as ReactRoutes, Route} from "react-router-dom";
 import {Home, Login, Profile} from "./views";
 import {Galaxies} from "./views/Galaxies/Galaxies";
-import {GalaxyCard} from "./components/GalaxyCard/GalaxyCard";
+import {GalaxyCard} from "./components";
 
 export enum AppRoutes {
     GALAXIES = '/galaxies',

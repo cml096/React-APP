@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {RequestMethod, ResponseTypes} from "../utils/shared.utils";
-import {ChatBodyRequest, Model} from "../types";
+import {ChatBodyRequest, Model} from "../types/openAI.types";
 
 const apiKey = '';
 
