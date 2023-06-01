@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {RequestMethod, ResponseType} from "../utils/shared.utils";
-import {GalaxiesResponse} from "../types";
+import {GalaxiesResponse} from "../types/nasa.type";
 
 export const nasaApi = createApi({
     reducerPath: 'nasaApi',

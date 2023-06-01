@@ -44,29 +44,32 @@ export const Login: React.FC = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
-                Email:
-                <input
-                    type="email"
-                    value={state.email}
-                    onChange={e => setState({...state, email: e.target.value})}
-                    required
-                />
-            </label>
-            <label>
-                Password:
-                <input
-                    type="password"
-                    value={state.password}
-                    onChange={e => setState({...state, password: e.target.value})}
-                    required
-                />
-            </label>
-            {state.error && <p>{state.error}</p>}
-            <button type="submit" disabled={state.loading}>
-                {state.loading ? 'Signing in...' : 'Sign in'}
-            </button>
-        </form>
+        <div>
+            <h1>Login</h1>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Email:
+                    <input
+                        type="email"
+                        value={state.email}
+                        onChange={e => setState({...state, email: e.target.value})}
+                        required
+                    />
+                </label>
+                <label>
+                    Password:
+                    <input
+                        type="password"
+                        value={state.password}
+                        onChange={e => setState({...state, password: e.target.value})}
+                        required
+                    />
+                </label>
+                {state.error && <p>{state.error}</p>}
+                <button type="submit" disabled={state.loading}>
+                    {state.loading ? 'Signing in...' : 'Sign in'}
+                </button>
+            </form>
+        </div>
     );
 };

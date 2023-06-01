@@ -1,5 +1,5 @@
-import {GalaxyItem} from "../../types";
 import {Link} from "react-router-dom";
+import {GalaxyItem} from "../../types/nasa.type";
 
 interface GalaxiesLayoutProps {
     galaxies: Array<GalaxyItem>
